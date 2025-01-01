@@ -3,7 +3,7 @@ import { adminRouter } from "./admin";
 import { userRouter } from "./user";
 import { spaceRouter } from "./space";
 import { SigninSchema, SignupSchema } from "../../types";
-import { PrismaClient } from "@repo/db/client";
+import { PrismaClient } from "@repo/db";
 import jwt from "jsonwebtoken";
 import { JWT_PASSWORD } from "../../config";
 import {hash, compare} from "../../scrypt";
